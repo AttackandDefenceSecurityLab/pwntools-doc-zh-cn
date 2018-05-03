@@ -1,0 +1,112 @@
+# pwntools
+`pwntools`是一个CTF框架和用于开发的库。 用Python编写，它专为快速原型设计和开发而设计，旨在尽可能简化开发过程。
+此文档的主要位置位于[docs.pwntools.com](docs.pwntools.com)，使用readthedocs。本文档有三个版本：
+- 稳定版
+- 测试版
+- 开发版
+
+# 入门
+- 关于 pwntools
+    - pwn — 为CTF优化的工具箱
+    - pwnlib — 通用python库
+- 安装
+    - 先决条件
+        - Binutils
+        - Python开发头
+    - 发布版本
+    - 开发
+- 入门
+    - 建立连接
+    - 封装整型
+    - 设置目标架构和操作系统
+    - 设置记录详情
+    - 汇编和反汇编
+    - 杂项工具
+    - ELF操纵
+- `from pwn import *`
+- 命令行工具
+    - PWN
+        - pwn asm
+        - pwn asm
+        - pwn checksec
+        - pwn constgrep
+        - pwn cyclic
+        - pwn debug
+        - pwn disablenx
+        - pwn disasm
+        - pwn elfdiff
+        - pwn elfpatch
+        - pwn errno
+        - pwn hex
+        - pwn phd
+        - pwn pwnstrip
+        - pwn scramble
+        - pwn shellcraft
+        - pwn template
+        - pwn unhex
+        - pwn update
+
+# 内置模块
+这里记录了`pwntools`所有模块。
+- `pwnlib.adb` - Android调试
+- `pwnlib.args` - 魔术命令行参数
+- `pwnlib.asm` - 汇编函数
+- `pwnlib.atexception` - 回调未处理的异常
+- `pwnlib.atexit` - python内置atexit的替代品
+- `pwnlib.constants` - 轻松访问头文件常量
+- `pwnlib.config` - Pwntools配置文件
+- `pwnlib.context` - 设置运行时变量
+- `pwnlib.dynelf` - 对远程函数执行泄露攻击
+- `pwnlib.encoders` - 编码Shellcode
+- `pwnlib.elf` - ELF可执行文件和库
+- `pwnlib.exception` - Pwnlib异常
+- `pwnlib.flag` - CTF flag 管理工具
+- `pwnlib.fmtstr` - 格式化字符串错误执行工具
+- `pwnlib.gdb` - 使用GDB
+- `pwnlib.libcdb` - Libc数据库
+- `pwnlib.log` - 日志记录
+- `pwnlib.memleak` - 泄漏内存辅助类
+- `pwnlib.protocols` - Wire协议
+- `pwnlib.qemu` - QEMU公用库
+- `pwnlib.replacements` - 替换各种函数
+- `pwnlib.rop` - ROP
+- `pwnlib.rop.rop` - ROP
+- `pwnlib.rop.srop` - SROP
+- `pwnlib.runner` - 运行Shellcode
+- `pwnlib.shellcraft` - 生成Shellcode
+- `pwnlib.shellcraft.aarch64` - AArch64的Shellcode
+- `pwnlib.shellcraft.amd64` - AMD64的Shellcode
+- `pwnlib.shellcraft.arm` - ARM的Shellcode
+- `pwnlib.shellcraft.common` - 所有架构通用的Shellcode
+- `pwnlib.shellcraft.i386` - 英特尔80386的Shellcode
+- `pwnlib.shellcraft.mips` - MIPS的Shellcode
+- `pwnlib.regsort` - 注册排序
+- `pwnlib.shellcraft.thumb` - Thumb模式的Shellcode
+- `pwnlib.term` - 终端处理
+- `pwnlib.timeout` - 超时处理
+- `pwnlib.tubes` - 与世界交流！
+- `pwnlib.tubes.process` - 进程
+- `pwnlib.tubes.serialtube` - 串行端口
+- `pwnlib.tubes.sock` - 套接字
+- `pwnlib.tubes.ssh` - SSH
+- `pwnlib.ui` - 用户交互功能
+- `pwnlib.update` - 更新Pwntools
+- `pwnlib.useragents` - 一个用户代理字符串的数据库
+- `pwnlib.util.crc` - 计算CRC总和
+- `pwnlib.util.cyclic` - 生成独特的序列
+- `pwnlib.util.fiddling` - 位编码/解码库
+- `pwnlib.util.hashes` - 哈希函数
+- `pwnlib.util.iters` - 标准模块`itertools`的扩展
+- `pwnlib.util.lists` - 列表上的操作
+- `pwnlib.util.misc` - 其他分类
+- `pwnlib.util.net` - 网络接口
+- `pwnlib.util.packing` - 打包和解包字符串
+- `pwnlib.util.proc` - 与`/porc`一起使用
+- `pwnlib.util.safeeval` - python代码安全评估
+- `pwnlib.util.sh_string` - 艰难的Shell扩展
+- `pwnlib.util.web` - 与WWW一起工作的实用程序
+
+# 索引和表格
+- 索引
+- 模块索引
+- 搜索页面
