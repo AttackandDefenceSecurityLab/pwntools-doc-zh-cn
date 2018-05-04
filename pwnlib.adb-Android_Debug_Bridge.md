@@ -1,4 +1,4 @@
-## `pwnlib.adb` -Android调试桥
+*## `pwnlib.adb` -Android调试桥
 
 通过Android调试桥提供用于与Android设备进行交互的实用工具
 
@@ -44,7 +44,7 @@ adb.write('/data/local/tmp/foo', 'my data')
 
  
 
-*class* pwnlib.adb.adb.AdbDevice(*serial, type, port=None, product='unknown', model='unknown', device='unknown', features=None, /*/*kw*)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py)
+*class* pwnlib.adb.adb.AdbDevice(*serial, type, port=None, product='unknown', model='unknown', device='unknown', features=None, /**kw*)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py)
 
 与已连接设备相关的封装信息。
 
