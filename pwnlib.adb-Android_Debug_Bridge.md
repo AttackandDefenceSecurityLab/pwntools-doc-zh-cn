@@ -77,25 +77,25 @@ adb.write('/data/local/tmp/foo', 'my data')
 
  
 
-pwnlib.adb.adb.boot_time() → int     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.boot_time**() → int     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 **Returns**:在Unix时间戳上的设备引导时间会四舍五入成最接近的秒数
 
  
 
-pwnlib.adb.adb.build(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.build**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回设备的构建版本号。
 
  
 
-pwnlib.adb.adb.compile(_source_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1184-1237)
+>**pwnlib.adb.adb.compile**(_source_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1184-1237)
 
 使用Android NDK编译源文件或项目。
 
  
 
-pwnlib.adb.adb.current\_device(_any=False_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L109-124)
+>**pwnlib.adb.adb.current\_device**(_any=False_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L109-124)
 
 为当前选择的设备返回一个`AdbDevice`实例(通过`context.device`)。
 
@@ -111,19 +111,19 @@ AdbDevice(serial='emulator-5554', type='device', port='emulator', product='sdk_p
 
  
 
-pwnlib.adb.adb.devices(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.devices**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 返回与连接设备对应的设备对象列表。
 
  
 
-pwnlib.adb.adb.disable\_verity(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.disable\_verity**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 禁用设备上的dm-verity。
 
  
 
-pwnlib.adb.adb.exists(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.exists**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 如果目标设备上存在`path`，则返回`True`
 
@@ -140,7 +140,7 @@ False
 
  
 
-pwnlib.adb.adb.fastboot(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.fastboot**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 执行fastboot命令。
 
@@ -148,7 +148,7 @@ pwnlib.adb.adb.fastboot(_\*a, **kw_)     [[source\]](https://github.com/Gallopsl
 
  
 
-pwnlib.adb.adb.find\_ndk\_project_root(_source_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1119-1132)
+>**pwnlib.adb.adb.find\_ndk\_project_root**(_source_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1119-1132)
 
 给定一个目录路径，找到最顶层的项目的根目录。
 
@@ -156,19 +156,19 @@ tl;dr “foo/bar/jni/baz.cpp” ==> “foo/bar”
 
  
 
-pwnlib.adb.adb.fingerprint(_\*a, **kw_)      [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.fingerprint**(_\*a, **kw_)      [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回设备所构建的指纹信息。
 
  
 
-pwnlib.adb.adb.forward(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.forward**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 设置一个端口转发到设备。
 
  
 
-pwnlib.adb.adb.getprop(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.getprop**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 从系统属性存储中读取一项属性。
 
@@ -178,7 +178,7 @@ pwnlib.adb.adb.getprop(_\*a, **kw_)     [[source\]](https://github.com/Gallopsle
 
  
 
-pwnlib.adb.adb.install(_apk, \*arguments_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1339-1365)
+>**pwnlib.adb.adb.install**(_apk, \*arguments_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1339-1365)
 
 将APK安装到设备上。
 
@@ -192,13 +192,13 @@ pwnlib.adb.adb.install(_apk, \*arguments_)     [[source\]](https://github.com/Ga
 
 
 
-pwnlib.adb.adb.interactive(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.interactive**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 产生一个交互式shell。
 
  
 
-pwnlib.adb.adb.isdir(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.isdir**(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 如果`path`位于目标设备上，则返回`True`。
 
@@ -215,7 +215,7 @@ False
 
  
 
-pwnlib.adb.adb.listdir(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.listdir**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回包含所提供目录中的条目的列表。
 
@@ -225,7 +225,7 @@ pwnlib.adb.adb.listdir(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled
 
  
 
-pwnlib.adb.adb.logcat(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.logcat**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 读取系统日志文件。
 
@@ -237,7 +237,7 @@ pwnlib.adb.adb.logcat(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/
 
  
 
-pwnlib.adb.adb.makedirs(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.makedirs**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 在目标设备上创建一个目录和所有父目录。
 
@@ -255,7 +255,7 @@ pwnlib.adb.adb.makedirs(_\*a, **kw_)    [[source\]](https://github.com/Gallopsle
 
  
 
-pwnlib.adb.adb.mkdir(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.mkdir**(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 在目标设备上创建一个目录。
 
@@ -289,25 +289,25 @@ PwnlibException: mkdir failed for /init, File exists
 
  
 
-pwnlib.adb.adb.packages(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.packages**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 返回系统上安装的软件包列表。
 
  
 
-pwnlib.adb.adb.pidof(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.pidof**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回指定进程的PID列表。
 
  
 
-pwnlib.adb.adb.proc\_exe(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.proc\_exe**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回所提供的PID的可执行文件的完整路径。
 
  
 
-pwnlib.adb.adb.process(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.process**(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 在设备上执行一个进程。
 
@@ -325,13 +325,13 @@ Linux version ...
 
  
 
-pwnlib.adb.adb.product(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.product**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回设备的产品标识符。
 
  
 
-pwnlib.adb.adb.pull(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.pull**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 从设备下载文件。
 
@@ -352,7 +352,7 @@ Linux version ...
 
  
 
-pwnlib.adb.adb.push(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.push**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 上传文件到设备。
 
@@ -379,7 +379,7 @@ PwnlibException: Could not stat '/does/not/exist'
 
  
 
-pwnlib.adb.adb.read(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.read**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 从设备下载文件，并提取其内容。
 
@@ -402,25 +402,25 @@ PwnlibException: Could not stat '/does/not/exist'
 
  
 
-pwnlib.adb.adb.reboot(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L163-168)
+>**pwnlib.adb.adb.reboot**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L163-168)
 
 重启设备。
 
  
 
-pwnlib.adb.adb.reboot\_bootloader(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L163-168)
+>**pwnlib.adb.adb.reboot\_bootloader**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L163-168)
 
 将设备重新引导到引导加载程序。
 
  
 
-pwnlib.adb.adb.remount(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.remount**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 将文件系统重新设置为可写。
 
  
 
-pwnlib.adb.adb.root(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.root**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 以root身份重新启动adbd。
 
@@ -430,19 +430,19 @@ pwnlib.adb.adb.root(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pw
 
  
 
-pwnlib.adb.adb.setprop(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.setprop**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 将属性写入系统属性存储区。
 
  
 
-pwnlib.adb.adb.shell(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.shell**(_\*a, **kw_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回交互式shell。
 
  
 
-pwnlib.adb.adb.uninstall(_package, \*arguments_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1367-1378)
+>**pwnlib.adb.adb.uninstall**(_package, \*arguments_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1367-1378)
 
 从设备上卸载APK。
 
@@ -456,7 +456,7 @@ pwnlib.adb.adb.uninstall(_package, \*arguments_)    [[source\]](https://github.c
 
 
 
-pwnlib.adb.adb.unlink(_\*a, **kw_) [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.unlink**(_\*a, **kw_) [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 断开目标设备上的文件或目录。
 
@@ -496,7 +496,7 @@ False
 
  
 
-pwnlib.adb.adb.unlock\_bootloader(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.unlock\_bootloader**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 解锁设备的引导加载程序。
 
@@ -506,19 +506,19 @@ pwnlib.adb.adb.unlock\_bootloader(_\*a, **kw_)    [[source\]](https://github.com
 
  
 
-pwnlib.adb.adb.unroot(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.unroot**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 将adbd重新启动为AID_SHELL。
 
  
 
-pwnlib.adb.adb.uptime() → float     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.uptime**() → float     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 **Returns:**   设备的正常运行时间，以秒为单位
 
  
 
-pwnlib.adb.adb.wait\_for\_device(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1388-1395)
+>**pwnlib.adb.adb.wait\_for\_device**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1388-1395)
 
 等待设备连接。
 
@@ -536,7 +536,7 @@ pwnlib.adb.adb.wait\_for\_device(_\*a, **kw_)    [[source\]](https://github.com/
 
  
 
-pwnlib.adb.adb.which(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+>**pwnlib.adb.adb.which**(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 在设备上检索`$PATH`中的二进制文件的完整路径
 
@@ -567,7 +567,7 @@ True
 
  
 
-pwnlib.adb.adb.write(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+>**pwnlib.adb.adb.write**(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 根据所提供的内容在设备上创建一个文件。
 
@@ -584,3 +584,4 @@ pwnlib.adb.adb.write(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/
 ```
 
 该文件仅用于向后兼容
+
