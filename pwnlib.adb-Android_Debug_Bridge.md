@@ -18,7 +18,6 @@ context.device = adb.wait_for_device()
 
 # Set a device by serial number
 context.device = 'ZX1G22LH8S'
-
 # Set a device by its product name
 for device in adb.devices():
     if device.product == 'shamu':
@@ -44,7 +43,7 @@ adb.write('/data/local/tmp/foo', 'my data')
 
  
 
-*class* pwnlib.adb.adb.AdbDevice(*serial, type, port=None, product='unknown', model='unknown', device='unknown', features=None, /**/kw*)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py)
+*class* pwnlib.adb.adb.AdbDevice*(serial, type, port=None, product='unknown', model='unknown', device='unknown', features=None, /***kw)*    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py)
 
 与已连接设备相关的封装信息。
 
