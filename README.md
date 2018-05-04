@@ -5,3 +5,22 @@
 - [x] 综述
 - [x] 命令行工具
 - [ ] 子模块
+
+# 人员配置
+
+## Gaveu
+
+- [x] pwnlib.dynelf
+- [ ] pwnlib.elf
+- [ ] pwnlib.exception
+- [ ] pwnlib.encoders
+
+## ivy-limit
+
+- [ ] Example Test Moudule
+
+## starmiku
+
+- [ ] pwnlib.tubes
+
+
