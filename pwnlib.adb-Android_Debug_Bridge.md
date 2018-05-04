@@ -43,7 +43,7 @@ adb.write('/data/local/tmp/foo', 'my data')
 
  
 
-*class* pwnlib.adb.adb.AdbDevice*(serial, type, port=None, product='unknown', model='unknown', device='unknown', features=None, ***kw)*    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py)
+*class* pwnlib.adb.adb.AdbDevice *(serial, type, port=None, product='unknown', model='unknown', device='unknown', features=None, **kw)*    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py)
 
 与已连接设备相关的封装信息。
 
