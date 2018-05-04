@@ -301,7 +301,7 @@ pwnlib.adb.adb.pidof(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/p
 
  
 
-pwnlib.adb.adb.proc_exe(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+pwnlib.adb.adb.proc\_exe(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回所提供的PID的可执行文件的完整路径。
 
