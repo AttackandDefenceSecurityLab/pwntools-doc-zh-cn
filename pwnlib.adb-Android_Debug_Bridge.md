@@ -117,7 +117,7 @@ pwnlib.adb.adb.devices(_\*a, **kw_)     [[source\]](https://github.com/Gallopsle
 
  
 
-pwnlib.adb.adb.disable_verity(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+pwnlib.adb.adb.disable\_verity(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 禁用设备上的dm-verity。
 
