@@ -408,7 +408,7 @@ pwnlib.adb.adb.reboot(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/
 
  
 
-pwnlib.adb.adb.reboot_bootloader(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L163-168)
+pwnlib.adb.adb.reboot\_bootloader(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L163-168)
 
 将设备重新引导到引导加载程序。
 
@@ -496,7 +496,7 @@ False
 
  
 
-pwnlib.adb.adb.unlock_bootloader(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+pwnlib.adb.adb.unlock\_bootloader(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 解锁设备的引导加载程序。
 
@@ -518,7 +518,7 @@ pwnlib.adb.adb.uptime() → float     [[source\]](https://github.com/Gallopsled/
 
  
 
-pwnlib.adb.adb.wait_for_device(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1388-1395)
+pwnlib.adb.adb.wait\_for\_device(_\*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1388-1395)
 
 等待设备连接。
 
