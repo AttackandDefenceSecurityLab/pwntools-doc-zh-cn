@@ -66,7 +66,7 @@ adb.write('/data/local/tmp/foo', 'my data')
 
  
 
-pwnlib.adb.adb.adb(_argv, \*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L74-89)
+>**pwnlib.adb.adb.adb**(_argv, \*a, **kw_)    [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L74-89)
 
 返回ADB子命令的输出。
 
