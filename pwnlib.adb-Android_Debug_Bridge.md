@@ -4,7 +4,7 @@
 
 ### Pwntools与Android设备搭配使用
 
-Pwntools试图将其与Android设备的搭配使用变得更加方便！
+Pwntools试图将其与Android设备的交互变得更加简便！
 
 如果你只连接了一台设备，那么一切都会“运行正常”。
 
