@@ -83,7 +83,7 @@ pwnlib.adb.adb.boot_time() → int     [[source\]](https://github.com/Gallopsled
 
  
 
-pwnlib.adb.adb.build_(\*a, **kw)_     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
+pwnlib.adb.adb.build(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L127-136)
 
 返回设备的构建版本号。
 
@@ -111,7 +111,7 @@ AdbDevice(serial='emulator-5554', type='device', port='emulator', product='sdk_p
 
  
 
-pwnlib.adb.adb.devices_(\*a, **kw)_     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+pwnlib.adb.adb.devices(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 返回与连接设备对应的设备对象列表。
 
@@ -123,7 +123,7 @@ pwnlib.adb.adb.disable_verity_(\*a, **kw)_     [[source\]](https://github.com/Ga
 
  
 
-pwnlib.adb.adb.exists_(\*a, **kw)_     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
+pwnlib.adb.adb.exists(_\*a, **kw_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L549-555)
 
 如果目标设备上存在`path`，则返回`True`
 
