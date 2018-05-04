@@ -95,7 +95,7 @@ pwnlib.adb.adb.compile(_source_)    [[source\]](https://github.com/Gallopsled/pw
 
  
 
-pwnlib.adb.adb.current_device(_any=False_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L109-124)
+pwnlib.adb.adb.current\_device(_any=False_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L109-124)
 
 为当前选择的设备返回一个`AdbDevice`实例(通过`context.device`)。
 
@@ -148,7 +148,7 @@ pwnlib.adb.adb.fastboot(_\*a, **kw_)     [[source\]](https://github.com/Gallopsl
 
  
 
-pwnlib.adb.adb.find_ndk_project_root(_source_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1119-1132)
+pwnlib.adb.adb.find\_ndk\_project_root(_source_)     [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/adb/adb.py#L1119-1132)
 
 给定一个目录路径，找到最顶层的项目的根目录。
 
