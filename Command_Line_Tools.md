@@ -26,7 +26,7 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 
 `line`
 
-需要转换为十六进制的汇编指令。如果没有需要的指令，则使用stdin。
+需要转换为十六进制的汇编指令。如果没有填入的指令，则从stdin读取。
 
 `-h, --help`
 
@@ -34,17 +34,17 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 
 `-f {raw,hex,string,elf}, --format {raw,hex,string,elf}`
 
-输出格式（默认输出用于串行端口终端(ttys)的十六进制，否则输出原始数据）。
+输出格式（默认输出十六进制到串行端口，除此之外输出原始格式）。
 
 `-o <flie>, --output<file>`
 
-输出文档（默认为stdout）。
+输出到指定文件（默认输出到stdout）。
 
 ```shell
 -c {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,powerpc,mips64,msp430 thumb,amd64,sparc,alpha,s390,i386,m68k,mips,ia64,cris,vax,avr,arm,little,big,el,le,be,eb}, --context {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,power}
 ```
 
-设置shellcode运行的环境（系统/架构/字节顺序/系统位数；默认为linux/i386）：
+设置shellcode运行的环境（系统/处理器架构/字节序/位宽；默认为linux/i386）：
 [‘16’, ‘32’, ‘64’, ‘android’, ‘cgc’, ‘freebsd’, ‘linux’, ‘windows’, ‘powerpc64’, ‘aarch64’, ‘sparc64’, ‘powerpc’, ‘mips64’, ‘msp430’, ‘thumb’, ‘amd64’, ‘sparc’, ‘alpha’, ‘s390’, ‘i386’, ‘m68k’, ‘mips’, ‘ia64’, ‘cris’, ‘vax’, ‘avr’, ‘arm’, ‘little’, ‘big’, ‘el’, ‘le’, ‘be’, ‘eb’]
 
 `-v <avoid>, --avoid<avoid>`
@@ -90,7 +90,7 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 
 `--file <elf>`
 
-需要查看的文件（为了与checksec.sh兼容）。
+要查看的文件（为了与checksec.sh兼容）。
 
 ## pwn constgrep
 
@@ -107,6 +107,7 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 需要查找的常量。
 
 `-h, --help`
+
 显示帮助信息并退出。
 
 
@@ -120,13 +121,13 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 
 `-m, --mask-mode`
 
-搜索不包含少于给定值的位数的值，而不是搜索特定常量的值。
+搜索不包含少于给定值的位数的值，而不是搜索特定位数的值。
 
 ```shell
 -c {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,powerpc,mips64,msp430 thumb,amd64,sparc,alpha,s390,i386,m68k,mips,ia64,cris,vax,avr,arm,little,big,el,le,be,eb}, --context {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,power}
 ```
 
-设置shellcode运行的环境（系统/架构/字节顺序/系统位数；默认为linux/i386）：
+设置shellcode运行的环境（系统/处理器架构/字节序/位宽；默认为linux/i386）：
 [‘16’, ‘32’, ‘64’, ‘android’, ‘cgc’, ‘freebsd’, ‘linux’, ‘windows’, ‘powerpc64’, ‘aarch64’, ‘sparc64’, ‘powerpc’, ‘mips64’, ‘msp430’, ‘thumb’, ‘amd64’, ‘sparc’, ‘alpha’, ‘s390’, ‘i386’, ‘m68k’, ‘mips’, ‘ia64’, ‘cris’, ‘vax’, ‘avr’, ‘arm’, ‘little’, ‘big’, ‘el’, ‘le’, ‘be’, ‘eb’]
 
 ## pwn cyclic
@@ -139,7 +140,7 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 
 `count`
 
-要打印的字符数。
+要打印的字符数量。
 
 `-h, --help`
 
@@ -147,7 +148,7 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 
 `-a <alphabet>, --alphabet <alphabet>`
 
-用于cyclic pattern的字母表（默认为全部小写字母）。
+用于cyclic pattern的字母（默认为全部小写字母）。
 
 `-n <length>, --length <length>`
 
@@ -157,12 +158,12 @@ pwntools附带有一些命令行实用程序，封装了某些内部功能。
 -c {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,powerpc,mips64,msp430 thumb,amd64,sparc,alpha,s390,i386,m68k,mips,ia64,cris,vax,avr,arm,little,big,el,le,be,eb}, --context {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,power}
 ```
 
-设置shellcode运行的环境（系统/架构/字节顺序/系统位数；默认为linux/i386）：
+设置shellcode运行的环境（系统/处理器架构/字节序/位宽；默认为linux/i386）：
 [‘16’, ‘32’, ‘64’, ‘android’, ‘cgc’, ‘freebsd’, ‘linux’, ‘windows’, ‘powerpc64’, ‘aarch64’, ‘sparc64’, ‘powerpc’, ‘mips64’, ‘msp430’, ‘thumb’, ‘amd64’, ‘sparc’, ‘alpha’, ‘s390’, ‘i386’, ‘m68k’, ‘mips’, ‘ia64’, ‘cris’, ‘vax’, ‘avr’, ‘arm’, ‘little’, ‘big’, ‘el’, ‘le’, ‘be’, ‘eb’]
 
 `-l <lookup_value>, -o <lookup_value>, --offset <lookup_value>, --lookup <lookup_value>`
 
-查找参数而不是打印字母表。
+查找参数而不打印字母。
 
 ## pwn debug
 
@@ -226,7 +227,7 @@ GDB根目录。
 
 `hex`
 
-需要转化为汇编的十六进制字符串，如果没有则使用非十六进制的stdin。
+需要转换的十六进制字符串，如果没有输入则从非十六进制的stdin读取。
 
 `-h, --help`
 
@@ -236,23 +237,22 @@ GDB根目录。
 -c {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,powerpc,mips64,msp430 thumb,amd64,sparc,alpha,s390,i386,m68k,mips,ia64,cris,vax,avr,arm,little,big,el,le,be,eb}, --context {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,power}
 ```
 
-设置shellcode运行的环境（系统/架构/字节顺序/系统位数；默认为linux/i386）：
+设置shellcode运行的环境（系统/处理器架构/字节序/位宽；默认为linux/i386）：
 [‘16’, ‘32’, ‘64’, ‘android’, ‘cgc’, ‘freebsd’, ‘linux’, ‘windows’, ‘powerpc64’, ‘aarch64’, ‘sparc64’, ‘powerpc’, ‘mips64’, ‘msp430’, ‘thumb’, ‘amd64’, ‘sparc’, ‘alpha’, ‘s390’, ‘i386’, ‘m68k’, ‘mips’, ‘ia64’, ‘cris’, ‘vax’, ‘avr’, ‘arm’, ‘little’, ‘big’, ‘el’, ‘le’, ‘be’, ‘eb’]
 
 `-a <address>, --address <address>`
 
-根目录。
+文件的根目录。
 
 `--color`
 
-输出内容使用颜色。
+输出内容着色。
 
 `--no-color`
 
-输出内容不使用颜色。
+输出内容不着色。
 
 ## pwn elfdiff 
-注：关于a参数和b参数的原文有缺失。
 
 ```shell
 使用方式: pwn elfdiff [-h] a b
@@ -260,7 +260,11 @@ GDB根目录。
 
 `a`
 
+（原文缺失）
+
 `b`
+
+（原文缺失）
 
 `-h, --help`
 
@@ -284,7 +288,7 @@ GDB根目录。
 
 `error`
 
-错误信息或者值。
+错误时的信息或者值。
 
 `-h, --help`
 
@@ -342,4 +346,227 @@ GDB根目录。
 
 `--color {always,never,auto}`
 
-输出内容着色。 当设定为`auto` 时，若在终端输出则着色。默认为`auto`。
+输出内容着色，当设定为`auto` 时，在终端输出时着色。默认为`auto`。
+
+##pwn pwnstrip
+
+```shell
+使用方式: pwn pwnstrip [-h] [-b] [-p FUNCTION] [-o OUTPUT] file
+```
+
+`file`
+
+（原文缺失）
+
+`-h ,--help`
+
+显示帮助信息并退出。
+
+`-b, --build-id`
+
+连接的二进制文件版本号。
+
+`-p <function>, --patch <function>`
+
+修复功能。
+
+`-o <output>, ---output <output>`
+
+（原文缺失）
+
+## pwn scramble
+
+```shell
+使用方式: pwn scramble [-h] [-f {raw,hex,string,elf}] [-o file] [-c context] [-p]
+                      [-v AVOID] [-n] [-z] [-d]
+```
+
+`-h ,--help`
+
+显示帮助信息并退出。
+
+`-f {raw,hex,string,elf}, --format {raw,hex,string,elf}`
+
+输出格式（默认输出十六进制到串行端口，除此之外输出原始格式）。
+
+`-o <file>, --output <file>`
+
+输出到指定文件（默认输出到stdout）。
+
+```shell
+-c {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,powerpc,mips64,msp430 thumb,amd64,sparc,alpha,s390,i386,m68k,mips,ia64,cris,vax,avr,arm,little,big,el,le,be,eb}, --context {16,32,64,android,cgc,freebsd,linux,windows,powerpc64,aarch64,sparc64,power}
+```
+
+设置shellcode运行的环境（系统/处理器架构/字节序/位宽；默认为linux/i386）：
+[‘16’, ‘32’, ‘64’, ‘android’, ‘cgc’, ‘freebsd’, ‘linux’, ‘windows’, ‘powerpc64’, ‘aarch64’, ‘sparc64’, ‘powerpc’, ‘mips64’, ‘msp430’, ‘thumb’, ‘amd64’, ‘sparc’, ‘alpha’, ‘s390’, ‘i386’, ‘m68k’, ‘mips’, ‘ia64’, ‘cris’, ‘vax’, ‘avr’, ‘arm’, ‘little’, ‘big’, ‘el’, ‘le’, ‘be’, ‘eb’]
+
+`-p ,--alphanumeric`
+
+使用alphanumeric编码器编码shellcode。
+
+`-v <avoid>, --avoid<avoid>`
+
+编码shellcode的时候跳过使用列出的字节（用十六进制表示；默认为：000a）。
+
+`-n, --newline`
+
+编码shellcode的时候跳过换行符。
+
+`-z, --zero`
+
+编码shellcode的时候跳过空字节（NULL）。
+
+`-d, --debug`
+
+用GDB来调试shellcode。
+
+## pwn shellcraft
+
+```shell
+使用方式: pwn shellcraft [-h] [-?] [-o file] [-f format] [-d] [-b] [-a]
+                        [-v AVOID] [-n] [-z] [-r] [--color] [--no-color]
+                        [--syscalls] [--address ADDRESS] [-l] [-s]
+                        [shellcode] [arg [arg ...]]
+```
+
+`shellcode`
+
+你想要得到的shellcode
+
+`arg`
+
+提供给shellcode的实参
+
+`-h, --help`
+
+显示帮助信息并退出
+
+`-o <flie>, --output<file>`
+
+输出到指定文件（默认输出到stdout）。
+
+```shell
+-f {r,raw,s,str,string,c,h,hex,a,asm,assembly,p,i,hexii,e,elf,d,escaped,default}, --format {r,raw,s,str,string,c,h,hex,a,asm,assembly,p,i,hexii,e,elf,d,escaped,default}
+```
+
+输出格式（默认为16进制）：{e}lf, {r}aw, {s}tring, {c}-style array, {h}ex string, hex{i}i, {a}ssembly code, {p}reprocssed code, escape{d} hex string
+
+`-d, --debug`
+
+使用GDB调试。
+
+`-b, --before`
+
+在代码前插入调试陷阱。
+
+`-a, --after`
+
+在代码后插入调试陷阱。
+
+`-v <avoid>, --avoid<avoid>`
+
+编码shellcode的时候跳过使用列出的字节（用十六进制表示；默认为：000a）。
+
+`-n, --newline`
+
+编码shellcode的时候跳过换行符。
+
+`-z, --zero`
+
+编码shellcode的时候跳过空字节（NULL）。
+
+`-r, --run`
+
+运行并输出。
+
+`--color`
+
+输出内容着色。
+
+`--no-color`
+
+输出内容不着色。
+
+`--syscalls`
+
+列出系统调用
+
+`address <address>`
+
+载入地址
+
+`-l, --list`
+
+列出可用的shellcode，可选择使用过滤器。
+
+`-s, --shared`
+
+生成的ELF文件是可共享的。
+
+## pwn tmplate
+
+```shell
+使用方式: pwn template [-h] [--host HOST] [--port PORT] [--user USER]
+                      [--pass PASSWORD] [--path PATH] [--quiet]
+                      [exe]
+```
+
+`exe`
+
+文件绝对路径
+
+`-h, --help`
+
+显示帮助信息并退出
+
+`--host <host>`
+
+远程控制/ssh服务
+
+`--port <port>`
+
+远程端口/ssh端口
+
+`--user <user>`
+
+ssh用户名
+
+`--pass <password>`
+
+ssh密码
+
+`--path <path>`
+
+ssh服务器上的远程文件路径。
+
+`--quiet`
+
+更详细的模板注释。
+
+## pwn unhex
+
+```shell
+使用方式: pwn unhex [-h] [hex [hex ...]]
+```
+
+`hex`
+
+需要解码的的十六进制字节。
+
+`-h, --help`
+
+显示帮助信息并退出。
+
+## pwn update
+
+`-h, --help`
+
+显示帮助信息并退出。
+
+`install`
+
+自动安装更新。
+
+`pre`
+
+查看预发行版。
