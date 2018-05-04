@@ -233,7 +233,7 @@ pwnlib.adb.adb.logcat_(\*a, **kw)_    [[source\]](https://github.com/Gallopsled/
 
 **Parameters:  stream** (*bool*) - 如果为`True`，则内容将流式传输，而不是以一次性方式读取。 默认值是`False`。
 
-**Returns:**如果`stream`是`False`，则返回一个包含日志数据的字符串。否则，它将返回一个连接到日志输出的`pwnlib.tubes.tube.tube`。
+**Returns**:如果`stream`是`False`，则返回一个包含日志数据的字符串。否则，它将返回一个连接到日志输出的`pwnlib.tubes.tube.tube`。
 
  
 
