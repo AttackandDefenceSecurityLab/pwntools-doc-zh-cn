@@ -1,4 +1,4 @@
-# pwntools-doc-zh-cn
+ pwntools-doc-zh-cn
 - pwntools官方说明文档汉化 [原地址](https://docs.pwntools.com/en/stable/index.html)
 
 # 人员配置
@@ -26,6 +26,6 @@
 
 - [x] pwnlib.adb
 - [x] pwnlib.args
-- [ ] pwnlib.asm
+- [x] pwnlib.asm
 - [ ] pwnlib.atexception
 - [ ] pwnlib.atexit
