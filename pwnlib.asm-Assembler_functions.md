@@ -165,9 +165,11 @@ mov    eax,0x5d
 
 其与`make_elf()`不同，因为所有的ELF符号都被储存下来，如标签和局部变量。如果非常注重文件的大小，请使用`make_elf()`。另外，其与`make_elf（）`中提取的默认值也是不同的。
 - **Note**
+
     这个实际上是`asm()`的封装。设置`extract=False`,`vma=0x10000000`,并将结果文件标记为可执行文件(`chmod +x`)。
     
 - **Note**   
+
     使用arch=thumb创建的ELF文件会预先准备一个切换到Thumb模式的ARM存根。
 
 **Parameters**:
