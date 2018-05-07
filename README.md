@@ -8,7 +8,7 @@
 - [x] pwnlib.dynelf
 - [ ] pwnlib.elf
 - [ ] pwnlib.exception
-- [ ] pwnlib.encoders
+- [x] pwnlib.encoders
 
 ## ivy-limit
 
@@ -16,7 +16,8 @@
 
 ## starmiku
 
-- [ ] pwnlib.tubes
+- [x] pwnlib.tubes
+ - [x] pwnlib.tubes.process
 
 ## Chernobyl
 
