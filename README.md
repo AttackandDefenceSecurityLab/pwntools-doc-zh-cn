@@ -17,11 +17,14 @@
 ## starmiku
 
 - [x] pwnlib.tubes
- - [x] pwnlib.tubes.process
+- [x] pwnlib.tubes.process
+- [x] pwnlib.tubes.sock
+- [x] pwnlib.tubes.serialtube
 
 ## Chernobyl
 
 - [x] index
+- [x] About pwntools
 
 ## jiali52013
 
