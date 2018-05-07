@@ -25,6 +25,7 @@
 
 - [x] index
 - [x] About pwntools
+- [x] Installation
 
 ## jiali52013
 
