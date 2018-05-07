@@ -8,6 +8,7 @@
 - [pwnlib.args](pwnlib.args-Magic_Command-Line_Arguments.md)
 - [pwnlib.asm](pwnlib.asm-Assembler_functions.md)
 - [pwnlib.atexception](pwnlib.atexception-Callbacks_on_unhandled_exception.md)
+- [pwnlib.atexit](pwnlib.atexit-Replacement_for_atexit.md)
 - [pwnlib.encoders](pwnlib.encoders-Encoding_Shellcode.md)
 - [pwnlib.tubes](pwnlib.tubes-Talking_to_the_World!.md)
 - [pwnlib.tubes.process](pwnlib.tubes.process-Processes.md)
