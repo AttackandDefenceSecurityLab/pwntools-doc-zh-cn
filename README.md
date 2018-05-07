@@ -27,5 +27,5 @@
 - [x] pwnlib.adb
 - [x] pwnlib.args
 - [x] pwnlib.asm
-- [ ] pwnlib.atexception
+- [x] pwnlib.atexception
 - [ ] pwnlib.atexit
