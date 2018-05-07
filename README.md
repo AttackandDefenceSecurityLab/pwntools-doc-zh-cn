@@ -29,4 +29,4 @@
 - [x] pwnlib.args
 - [x] pwnlib.asm
 - [x] pwnlib.atexception
-- [ ] pwnlib.atexit
+- [x] pwnlib.atexit
