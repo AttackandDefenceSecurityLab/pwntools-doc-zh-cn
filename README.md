@@ -21,9 +21,9 @@
 - [x] pwnlib.tubes.sock
 - [x] pwnlib.tubes.serialtube
 - [x] pwnlib.tubes.ssh
-- [ ] pwnlib.ui
-- [ ] pwnlib.update
-- [ ] pwnlib.useragents
+- [x] pwnlib.ui
+- [x] pwnlib.update
+- [x] pwnlib.useragents
 
 ## Chernobyl
 
