@@ -10,6 +10,8 @@
 - [pwnlib.atexception](pwnlib.atexception-Callbacks_on_unhandled_exception.md)
 - [pwnlib.atexit](pwnlib.atexit-Replacement_for_atexit.md)
 - [pwnlib.encoders](pwnlib.encoders-Encoding_Shellcode.md)
+- [pwnlib.term](pwnlib.term—Terminal_handling.md)
+- [pwnlib.timeout](pwnlib.timeout—Timeout_handling.md)
 - [pwnlib.tubes](pwnlib.tubes-Talking_to_the_World!.md)
 - [pwnlib.tubes.process](pwnlib.tubes.process-Processes.md)
 - [pwnlib.tubes.serialtube](pwnlib.tubes.serialtube—Serial_Ports.md)
@@ -19,3 +21,4 @@
 - [pwnlib.ui](pwnlib.ui—Functions_for_user_interaction.md)
 - [pwnlib.update](pwnlib.update—Updating_Pwntools.md)
 - [pwnlib.useragents](pwnlib.useragents—A_database_of_useragent_strings.md)
+- [pwnlib.util.crc](pwnlib.util.crc—Calculating_CRC-sums.md)
