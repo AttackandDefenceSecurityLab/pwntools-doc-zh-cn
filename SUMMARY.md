@@ -14,3 +14,8 @@
 - [pwnlib.tubes.process](pwnlib.tubes.process-Processes.md)
 - [pwnlib.tubes.serialtube](pwnlib.tubes.serialtube—Serial_Ports.md)
 - [pwnlib.tubes.sock](pwnlib.tubes.sock—Sockets.md)
+- [pwnlib.tubes.serialtube](pwnlib.tubes.serialtube—Serial_Ports.md)
+- [pwnlib.tubes.ssh](pwnlib.tubes.ssh—SSH.md)
+- [pwnlib.ui](pwnlib.ui—Functions_for_user_interaction.md)
+- [pwnlib.update](pwnlib.update—Updating_Pwntools.md)
+- [pwnlib.useragents](pwnlib.useragents—A_database_of_useragent_strings.md)
