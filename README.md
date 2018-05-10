@@ -16,6 +16,8 @@
 
 ## starmiku
 
+- [x] pwnlib.term
+- [x] pwnlib.timeout
 - [x] pwnlib.tubes
 - [x] pwnlib.tubes.process
 - [x] pwnlib.tubes.sock
@@ -24,6 +26,7 @@
 - [x] pwnlib.ui
 - [x] pwnlib.update
 - [x] pwnlib.useragents
+- [x] pwnlib.util.crc
 
 ## Chernobyl
 
