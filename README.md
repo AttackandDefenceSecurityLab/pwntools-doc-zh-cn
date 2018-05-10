@@ -27,6 +27,10 @@
 - [x] pwnlib.update
 - [x] pwnlib.useragents
 - [x] pwnlib.util.crc
+- [ ] pwnlib.util.fiddling
+- [ ] pwnlib.util.hashes
+- [ ] pwnlib.util.iters
+- [ ] pwnlib.util.lists
 
 ## Chernobyl
 
