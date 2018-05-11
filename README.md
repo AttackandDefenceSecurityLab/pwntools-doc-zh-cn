@@ -47,3 +47,10 @@
 - [x] pwnlib.atexit
 - [ ] pwnlib.flag
 - [ ] pwnlib.fmtstr
+
+## Andyi
+- [x] pwnlib.rop
+- [ ] pwnlib.rop.rop
+- [x] pwnlib.rop.srop
+- [ ] pwnlib.runner
+- [ ] pwnlib.shellcraft
