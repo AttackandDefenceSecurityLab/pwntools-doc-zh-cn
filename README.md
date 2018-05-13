@@ -46,7 +46,7 @@
 - [x] pwnlib.asm
 - [x] pwnlib.atexception
 - [x] pwnlib.atexit
-- [ ] pwnlib.flag
+- [x] pwnlib.flag
 - [ ] pwnlib.fmtstr
 
 ## Andyi
