@@ -1,6 +1,5 @@
 ## `pwnlib.flag` - CTF flag 管理工具
 
-类似于atexit，该模块允许程序员在未处理的异常发生时注册运行函数。
 
 >**pwnlib.flag.submit_flag**(_flag, exploit='unnamed-exploit', target='unknown-target', server='flag-submission-server', port='31337', proto='tcp', team='unknown-team'_)   [[source\]](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/flag.py#L21-73)
 
