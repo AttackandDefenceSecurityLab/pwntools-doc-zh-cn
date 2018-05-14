@@ -29,9 +29,13 @@
 - [x] pwnlib.util.crc
 - [x] pwnlib.util.cyclic
 - [x] pwnlib.util.fiddling
-- [ ] pwnlib.util.hashes
+- [x] pwnlib.util.hashes
 - [ ] pwnlib.util.iters
-- [ ] pwnlib.util.lists
+- [x] pwnlib.util.lists
+- [ ] pwnlib.util.misc
+- [ ] pwnlib.util.net
+- [ ] pwnlib.util.packing
+- [ ] pwnlib.util.proc
 
 ## Chernobyl
 
