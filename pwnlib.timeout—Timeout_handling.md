@@ -53,7 +53,7 @@ True
 
 `countdown(`*`timeout=pwnlib.timeout.Timeout.default`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/timeout.py#L175-198)
 
-作用域超时设置器。设置范围内的超时，并在超出范围时恢复。
+作用域超时设置器。设置范围内的超时时间，并在超出范围时恢复。
 
 在范围内达到`timeout`，则会通过倒计时的方式计算输入范围的时间。
 
@@ -61,11 +61,11 @@ True
 
 `local(`*`timeout`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/timeout.py#L200-208)
 
-作用域超时设置器。设置范围内的超时，并在超出范围时恢复。
+作用域超时设置器。设置范围内的超时时间，并在超出范围时恢复。
 
 `timeout_change()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/timeout.py#L169-173)
 
-调回子类来hook超时变化。
+用于提供给子类来hook超时变化。
 
 `default =` *`pwnlib.timeout.Timeout.default`* [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/timeout.py)
 
@@ -77,9 +77,9 @@ True
 
 `maximum =` *`pwnlib.timeout.maximum`* [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/timeout.py)
 
-超时的最大值，用于解决具有较大超时值的平台问题。
+超时时间的最大值，用于解决具有较大超时时间的平台问题。
 
-OSX不允许设置socket的超时为2**22，假设我们接收到等于或大于2**21的超时值，实际上该值为无限。
+OSX不允许设置socket的超时时间为2**22，假设我们接收到等于或大于2**21的超时时间，实际上该值为无限。
 
 `timeout` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/timeout.py)
 
