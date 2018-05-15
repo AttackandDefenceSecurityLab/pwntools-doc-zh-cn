@@ -614,6 +614,6 @@ True
 
 等待直到通信通道关闭。
 
-`newline=`*`\n`* [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py)
+`newline=`*`'\n'`* [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py)
 
 用于`sendline()`，`recvline()`和相关函数的分隔符。
