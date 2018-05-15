@@ -2,7 +2,7 @@
 
 ### `pwnlib.term.can_init()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/term.py#L23-55)
 
-如果stderr是终端（TTY）而且不在REPL内，则该函数返回`True`。如果该函数返回`True`，对`init()`的调用 will let `pwnlib` 控制终端。
+如果stderr是终端（TTY）而且不在REPL内，则该函数返回`True`。如果该函数返回`True`，对`init()`的调用会使`pwnlib` 控制终端。
 
 ### `pwnlib.term.init()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/term.py#L58-83)
 
