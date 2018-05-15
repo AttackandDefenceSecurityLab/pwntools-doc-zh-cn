@@ -21,7 +21,7 @@ pwnlib不是一个独立的模块，它拥有很多对外通信的通道。
 
 `can_recv(`*`timeout=0`*`)→bool` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1061-1081)
 
-如果在链接超时之前有可用数据则返回true。
+如果链接在`timeout`秒之前有可用数据则返回true。
 
 #### 例
 
@@ -45,9 +45,9 @@ False
 
 如果`timeout`设置为0，只清除缓存中的数据。
 
-注意：如果超时设置为0，则底层网络实际上未被轮询; 只有内部缓冲区被清除。
+注意：如果`timeout`设置为0，则底层网络实际上未被轮询; 只有内部缓冲区被清除。
 
-返回:All data received
+返回:所有接收到的数据。
 
 #### 例
 
@@ -64,7 +64,7 @@ False
 
 与`pwnlib.tubes.tube.tube.clean()`完全一样，但是通过`pwnlib.self.info()`保存数据到日志。
 
-返回:All data received
+返回:所有接收到的数据。
 
 #### 例
 
