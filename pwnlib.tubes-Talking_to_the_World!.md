@@ -19,7 +19,7 @@ pwnlib不是一个独立的模块，它拥有很多对外通信的通道。
 
 包含socket，串行端口和ssh通用的所有渠道。
 
-`can_recv(`*`timeout=0`*`)→bool` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1061-1081)
+>### `can_recv(`*`timeout=0`*`)→bool` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1061-1081)
 
 如果链接在`timeout`秒之前有可用数据则返回true。
 
@@ -39,7 +39,7 @@ True
 False
 ```
 
-`clean(`*`timeout=0.05`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L848-875)
+>### `clean(`*`timeout=0.05`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L848-875)
 
 直到失败前，只要达到一个很短的超时时间，都会调用`pwnlib.tubes.tube.tube.recv()`清除通信通道中的缓冲区数据。
 
@@ -60,7 +60,7 @@ False
 0
 ```
 
-`clean_and_log(`*`timeout=0.05`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L877-904)
+>### `clean_and_log(`*`timeout=0.05`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L877-904)
 
 与`pwnlib.tubes.tube.tube.clean()`完全一样，但是通过`pwnlib.self.info()`保存数据到日志。
 
@@ -84,15 +84,15 @@ False
 >>> context.clear()
 ```
 
-`close()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1271-1276)
+>### `close()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1271-1276)
 
 关闭通信通道。
 
-`connect_both(`*`other`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L988-994)
+>### `connect_both(`*`other`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L988-994)
 
 将该通信通道的两个终端链接到另一个通信通道中。
 
-`connect_input(`*`other`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L906-961)
+>### `connect_input(`*`other`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L906-961)
 
 将该通信通道的输入端链接到另一个通信通道的输出端。
 
@@ -116,7 +116,7 @@ False
 data
 ```
 
-`connect_output(`*`other`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L963-986)
+>### `connect_output(`*`other`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L963-986)
 
 将该通道的输出端链接到另一个通信通道的输入端
 
@@ -139,7 +139,7 @@ data
 data
 ```
 
-`connected(`*`direction='any'`*`)→bool` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1151-1183)
+>### `connected(`*`direction='any'`*`)→bool` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1151-1183)
 
 如果通信通道按照指定的方式链接则返回True
 
@@ -165,15 +165,15 @@ Traceback (most recent call last):
 KeyError: "direction must be in ['any', 'in', 'out', 'read', 'recv', 'send', 'write']"
 ```
 
-`fileno()→int` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1281-1287)
+>### `fileno()→int` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1281-1287)
 
 返回一个用于读取的文件号码。
 
-`interactive(`*`prompt=pwnlib.term.text.bold_red('$')+''`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L767-817)
+>### `interactive(`*`prompt=pwnlib.term.text.bold_red('$')+''`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L767-817)
 
 同时在通信通道中写入和读取。原则上只是将通信通道链接到标准输入和输出。但实际上这可用性更高，当我们通过`pwnlib.term`来打印浮点显示的时候。因此它只能在`pwnlib.term.term_mode`下工作。
 
-`recv(`*`numb = 4096, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L46-78)
+>### `recv(`*`numb = 4096, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L46-78)
 
 最多从通信通道接收`numb`个字节的数据，同时当任意数量的数据可用时立即返回。
 
@@ -200,11 +200,11 @@ True
     'Hello, world'
 ```
 
-`recvall() → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L656-676)
+>### `recvall() → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L656-676)
 
 持续接收数据直到接收到EOF
 
-`recvline(`*`keepends = True`*`) → str`
+>### `recvline(`*`keepends = True`*`) → str`
 
 从通信通道中接收单行数据。
 
@@ -234,7 +234,7 @@ True
 'Foo\nBar'
 ```
 
-`recvline_contains(`*`items, keepends=False, timeout=pwnlib.timeout.Timeout.default`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L476-508)
+>### `recvline_contains(`*`items, keepends=False, timeout=pwnlib.timeout.Timeout.default`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L476-508)
 
 持续接收数据行，直到某一行中包含有其中一个`items`。
 
@@ -261,7 +261,7 @@ True
 'bicycle car train'
 ```
 
-`recvline_endswith(`*`delims, keepends = False, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L546-576)
+>### `recvline_endswith(`*`delims, keepends = False, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L546-576)
 
 持续接收数据行，直到接收到一行以`delims`开始的数据。返回接收到的最后一行。
 
@@ -282,7 +282,7 @@ True
 'Kaboodle'
 ```
 
-`recvline_pred(`*`pred, keepends = False`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L428-474)
+>### `recvline_pred(`*`pred, keepends = False`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L428-474)
 
 接收数据直到`pred(行)`返回一个真值，删除其他数据。
 
@@ -303,7 +303,7 @@ True
 ''
 ```
 
-`recvline_regex(`*`regex, exact=False, keepends=False, timeout=pwnlib.timeout.Timeout.default`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L601-622)
+>### `recvline_regex(`*`regex, exact=False, keepends=False, timeout=pwnlib.timeout.Timeout.default`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L601-622)
 
 recvregex(regex, exact = False, keepends = False, timeout = default) -> str
 
@@ -313,7 +313,7 @@ recvregex(regex, exact = False, keepends = False, timeout = default) -> str
 
 如果在`timeout`秒之前请求未被满足，所有数据会被置入缓冲区并返回一个空字符串(`''`)。
 
-`recvline_startswith(`*`delims, keepends = False, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L510-544)
+>### `recvline_startswith(`*`delims, keepends = False, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L510-544)
 
 持续接收数据行，直到接收到一行以`delims`开始的数据。返回接收到的最后一行。
 
@@ -339,7 +339,7 @@ recvregex(regex, exact = False, keepends = False, timeout = default) -> str
 'World'
 ```
 
-`recvlines(`*`numlines, keepends = False, timeout = default`*`) → str list` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L335-390)
+>### `recvlines(`*`numlines, keepends = False, timeout = default`*`) → str list` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L335-390)
 
 最多接收`numlines`行的数据。
 
@@ -370,7 +370,7 @@ recvregex(regex, exact = False, keepends = False, timeout = default) -> str
 ['Foo\n', 'Bar\n', 'Baz\n']
 ```
 
-`recvn(`*`numb, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L200-244)
+>### `recvn(`*`numb, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L200-244)
 
 接收刚好`numb`个字节。
 
@@ -401,7 +401,7 @@ True
 'aaaaaa...'
 ```
 
-`recvpred(`*`pred, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L161-198)
+>### `recvpred(`*`pred, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L161-198)
 
 每次只接收一个字节的数据, 直到`pred(bytes)`变成True。
 
@@ -415,7 +415,7 @@ True
 
 返回: 一个包含从socket接收的字节的字符串，或当等待超时时返回''。
 
-`recvregex(`*`regex, exact = False, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L578-599)
+>### `recvregex(`*`regex, exact = False, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L578-599)
 
 封装`recvpred()`,当正则表达式匹配缓冲区中的字符时将其返回。
 
@@ -423,7 +423,7 @@ True
 
 如果在`timeout`秒之前请求未被满足，所有数据会被置入缓冲区并返回一个空字符串(`''`)。
 
-`recvrepeat(`*`timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L624-654)
+>### `recvrepeat(`*`timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L624-654)
 
 接收数据直到接收到EOF或超时。
 
@@ -447,7 +447,7 @@ True
 'd'
 ```
 
-`recvuntil(`*`delims, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L246-333)
+>### `recvuntil(`*`delims, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L246-333)
 
 接收数据直到遇到其中一个`delims`。
 
@@ -490,7 +490,7 @@ True
 'Hello'
 ```
 
-`send(`*`data`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L678-707)
+>### `send(`*`data`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L678-707)
 
 发送数据
 
@@ -508,11 +508,11 @@ True
 'hello'
 ```
 
-`sendafter(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L732-740)
+>### `sendafter(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L732-740)
 
 方法`recvuntil(delim, timeout)`和`send(data)`的结合。
 
-`sendline(`*`data`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L709-726)
+>### `sendline(`*`data`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L709-726)
 
 对`t.send(data + t.newline).`的速记。
 
@@ -529,19 +529,19 @@ True
 'hello\r\n'
 ```
 
-`sendlineafter(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L742-749)
+>### `sendlineafter(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L742-749)
 
 方法`recvuntil(delim, timeout)`和`sendline(data)`的结合。
 
-`sendlinethen(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L759-765)
+>### `sendlinethen(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L759-765)
 
 方法`sendline(data)`和`recvuntil(delim, timeout)`的结合。
 
-`sendthen(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L751-757)
+>### `sendthen(`*`delim, data, timeout = default`*`) → str` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L751-757)
 
 方法`send(data)`和`recvuntil(delim, timeout)`的结合
 
-`settimeout(`*`timeout`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1083-1099)
+>### `settimeout(`*`timeout`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1083-1099)
 
 设置接收操作的超时时间。如果使用的是字符串"defalut"，则使用`context.timeout`的参数。如果什么都没有提供则无超时时间。
 
@@ -555,7 +555,7 @@ True
 True
 ```
 
-`shutdown(`*`direction = "send"`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1114-1149)
+>### `shutdown(`*`direction = "send"`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1114-1149)
 
 根据`direction`关闭通信通道以方便进一步的读取或写入。
 
@@ -563,13 +563,13 @@ True
 
 返回:`None`
 
-`spawn_process(`*`*args, **kwargs`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L996-1007)
+>### `spawn_process(`*`*args, **kwargs`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L996-1007)
 
 生成一个新的进程，把通信通道作为stdin,stdout和stderr。
 
 采用和`subprocess.Popen`相同的参数。
 
-`stream()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L819-846)
+>### `stream()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L819-846)
 
 接收数据直到退出通信通道，然后输出到stdout。
 
@@ -577,7 +577,7 @@ True
 
 和`print tube.recvall()`类似，不同之处在于数据在接收时马上打印，而不是接收所有数据后打印。
 
-`timeout_change()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1239-1250)
+>### `timeout_change()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1239-1250)
 
 通知通信通道的原始层超时条件被更改。
 
@@ -585,7 +585,7 @@ True
 
 从超时开始继承。
 
-`unrecv(`*`data`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L80-100)
+>### `unrecv(`*`data`*`)` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L80-100)
 
 将指定数据放回到接收缓冲区的开头
 
@@ -605,15 +605,15 @@ True
 'hello'
 ```
 
-`wait()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1053-1057)
+>### `wait()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1053-1057)
 
 等待直到通信通道关闭。
 
 
-`wait_for_close()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1053-1057)
+>### `wait_for_close()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py#L1053-1057)
 
 等待直到通信通道关闭。
 
-`newline=`*`'\n'`* [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py)
+>### `newline=`*`'\n'`* [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/tubes/tube.py)
 
 用于`sendline()`，`recvline()`和相关函数的分隔符。
