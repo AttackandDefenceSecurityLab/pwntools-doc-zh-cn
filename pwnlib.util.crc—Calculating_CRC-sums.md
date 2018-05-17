@@ -50,7 +50,7 @@ Traceback (most recent call last):
 ValueError: Not a valid polynomial: y
 ```
 
-`degree()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/util/crc.py#L191-209)
+>### `degree()` [源码](https://github.com/Gallopsled/pwntools/blob/67473560c7/pwnlib/util/crc.py#L191-209)
 
 返回多项式的阶数。
 
