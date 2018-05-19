@@ -30,7 +30,7 @@
 - [x] pwnlib.util.cyclic
 - [x] pwnlib.util.fiddling
 - [x] pwnlib.util.hashes
-- [ ] pwnlib.util.iters
+- [x] pwnlib.util.iters
 - [x] pwnlib.util.lists
 - [ ] pwnlib.util.misc
 - [ ] pwnlib.util.net
