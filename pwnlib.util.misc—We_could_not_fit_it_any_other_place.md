@@ -4,7 +4,7 @@
 
 计算`x`到最多为`alignmet`的倍数。
 
-Example
+#### 例
 
 ```shell
 >>> [align(5, n) for n in range(15)]
@@ -15,7 +15,7 @@ Example
 
 计算`x`到最接近`alignmet`的倍数。
 
-Example
+#### 例
 
 ```shell
 >>> [align_down(5, n) for n in range(15)]
@@ -26,7 +26,7 @@ Example
 
 解析主机并返回四字节字符串的格式的IP。
 
-Example
+#### 例
 
 ```shell
 >>> binary_ip("127.0.0.1")
@@ -47,7 +47,7 @@ Example
 
 参数:	output (*str*) – 用于解析的输出。
 
-Example
+#### 例
 
 ```shell
 >>> sorted(parse_ldd_output('''
@@ -64,7 +64,7 @@ Example
 
 打开文件并返回内容。
 
-Examples
+#### 例s
 
 ```shell
 >>> read('/proc/self/exe')[:4]
@@ -84,7 +84,7 @@ Examples
 
 使用i386/AMD64模式的shellcode, 如：mov-shellcode.
 
-Example
+#### 例
 
 ```shell
 >>> regs = [['eax', 'ax', 'al', 'ah'],['ebx', 'bx', 'bl', 'bh'],
@@ -135,7 +135,7 @@ Example
 * n (*int,iterable*) – 转换为可读形式的长度，或可以调用`len()`的对象。
 * abbrev (*str*) – 字符串附加大小，默认为`'B'`。
 
-Example
+#### 例
 
 ```shell
 >>> size(451)
@@ -169,7 +169,7 @@ Example
 返回:	
 如果`all`为`True`，则为所有找到的位置的集合，否则返回第一个出现的或`None`。
 
-Example
+#### 例
 
 ```shell
 >>> which('sh')
