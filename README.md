@@ -33,7 +33,7 @@
 - [x] pwnlib.util.iters
 - [x] pwnlib.util.lists
 - [x] pwnlib.util.misc
-- [ ] pwnlib.util.net
+- [x] pwnlib.util.net
 - [ ] pwnlib.util.packing
 - [x] pwnlib.util.proc
 
