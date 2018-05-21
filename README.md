@@ -32,7 +32,7 @@
 - [x] pwnlib.util.hashes
 - [x] pwnlib.util.iters
 - [x] pwnlib.util.lists
-- [ ] pwnlib.util.misc
+- [x] pwnlib.util.misc
 - [ ] pwnlib.util.net
 - [ ] pwnlib.util.packing
 - [x] pwnlib.util.proc
