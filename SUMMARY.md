@@ -28,3 +28,6 @@
 - [pwnlib.util.fiddling](pwnlib.util.fiddling—Utilities_bit_fiddling.md)
 - [pwnlib.util.hashes](pwnlib.util.hashes—Hashing_functions.md)
 - [pwnlib.util.lists](pwnlib.util.lists—Operations_on_lists.md)
+- [pwnlib.util.misc](pwnlib.util.misc—We_could_not_fit_it_any_other_place.md)
+- [pwnlib.util.net](pwnlib.util.net—Networking_interfaces.md)
+- [pwnlib.util.proc](pwnlib.util.proc%20Working_with_proc.md)
