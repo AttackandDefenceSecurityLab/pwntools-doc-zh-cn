@@ -34,7 +34,7 @@
 - [x] pwnlib.util.lists
 - [x] pwnlib.util.misc
 - [x] pwnlib.util.net
-- [ ] pwnlib.util.packing
+- [x] pwnlib.util.packing
 - [x] pwnlib.util.proc
 
 ## Chernobyl
