@@ -36,7 +36,7 @@
 - [x] pwnlib.util.net
 - [x] pwnlib.util.packing
 - [x] pwnlib.util.proc
-- [ ] pwnlib.util.safeeval
+- [x] pwnlib.util.safeeval
 - [ ] pwnlib.util.sh_string
 - [ ] pwnlib.util.web
 
