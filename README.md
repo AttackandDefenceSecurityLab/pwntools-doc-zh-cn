@@ -37,8 +37,8 @@
 - [x] pwnlib.util.packing
 - [x] pwnlib.util.proc
 - [x] pwnlib.util.safeeval
-- [ ] pwnlib.util.sh_string
-- [ ] pwnlib.util.web
+- [x] pwnlib.util.sh_string
+- [x] pwnlib.util.web
 
 ## Chernobyl
 
