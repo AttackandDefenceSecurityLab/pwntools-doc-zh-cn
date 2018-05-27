@@ -46,7 +46,7 @@
 - [x] About pwntools
 - [x] Installation
 - [x] getting started
-- [ ] from pwn import *
+- [x] from pwn import *
 
 ## jiali52013
 
