@@ -56,7 +56,7 @@
 - [x] pwnlib.atexception
 - [x] pwnlib.atexit
 - [x] pwnlib.flag
-- [ ] pwnlib.fmtstr
+- [x] pwnlib.fmtstr
 
 ## Andyi
 - [x] pwnlib.rop
