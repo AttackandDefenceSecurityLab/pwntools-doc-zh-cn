@@ -64,7 +64,7 @@
 - [ ] pwnlib.rop.rop
 - [x] pwnlib.rop.srop
 - [x] pwnlib.runner
-- [ ] pwnlib.shellcraft
+- [x] pwnlib.shellcraft
 - [ ] pwnlib.shellcraft.amd64
 - [ ] pwnlib.shellcraft.i386
 - [ ] pwnlib.shellcraft.arm
