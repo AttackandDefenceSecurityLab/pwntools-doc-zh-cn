@@ -58,7 +58,7 @@
 - [x] pwnlib.flag
 - [x] pwnlib.fmtstr
 - [x] pwnlib.constants
-- [ ] pwnlib.config
+- [x] pwnlib.config
 ## Andyi
 - [x] pwnlib.rop
 - [ ] pwnlib.rop.rop
